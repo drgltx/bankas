@@ -17,10 +17,6 @@ public class Transaction {
         this.amount = amount;
     }
 
-    public Transaction ( String addMoneyTo , int howMuch ) {
-
-    }
-
     public boolean isValid(){
 
         return to != null && from != null && from.getBalance() >= amount;
